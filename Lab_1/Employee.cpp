@@ -1,7 +1,9 @@
+// Employee.cpp
 #include "Employee.h"
 #include <fstream>
 #include <random>
 #include <ctime>
+#include <vector>
 
 //Перегрузка операторов
 std::istream& operator>>(std::istream& is, Fullname& fn) {
@@ -273,4 +275,67 @@ void fillRandom(Employee* employee, size_t size) {
     for (size_t i = 0; i < size; ++i) {
         employee[i] = generateRandomEmployee();
     }
+}
+
+// ========== ПЕРЕГРУЗКИ ДЛЯ ВЕКТОРА ==========
+void print(const std::vector<Employee>& vec) {
+    print(vec.data(), vec.size());
+}
+
+void init(std::vector<Employee>& vec) {
+    size_t n;
+    std::cout << "Введите количество сотрудников: ";
+    std::cin >> n;
+    vec.clear();
+    vec.resize(n);
+    init(vec.data(), vec.size());
+}
+
+void writeToTextFile(const std::vector<Employee>& vec, const std::string& filename) {
+    writeToTextFile(vec.data(), vec.size(), filename);
+}
+
+void readFromTextFile(std::vector<Employee>& vec, const std::string& filename) {
+    Employee* arr = nullptr;
+    size_t sz = 0;
+    readFromTextFile(arr, sz, filename);
+    if (arr) {
+        vec.assign(arr, arr + sz);
+        delete[] arr;
+    } else {
+        vec.clear();
+    }
+}
+
+void writeToBinaryFile(const std::vector<Employee>& vec, const std::string& filename) {
+    writeToBinaryFile(vec.data(), vec.size(), filename);
+}
+
+void readFromBinaryFile(std::vector<Employee>& vec, const std::string& filename) {
+    Employee* arr = nullptr;
+    size_t sz = 0;
+    readFromBinaryFile(arr, sz, filename);
+    if (arr) {
+        vec.assign(arr, arr + sz);
+        delete[] arr;
+    } else {
+        vec.clear();
+    }
+}
+
+int find_element(const std::vector<Employee>& vec, bool (*condition)(const Employee&)) {
+    return find_element(vec.data(), vec.size(), condition);
+}
+
+Employees find_all_elements(const std::vector<Employee>& vec, bool (*condition)(const Employee&)) {
+    return find_all_elements(vec.data(), vec.size(), condition);
+}
+
+size_t needful_element(const std::vector<Employee>& vec, bool (*comparator)(const Employee&, const Employee&)) {
+    return needful_element(vec.data(), vec.size(), comparator);
+}
+
+void fillRandom(std::vector<Employee>& vec, size_t size) {
+    vec.resize(size);
+    fillRandom(vec.data(), size);
 }

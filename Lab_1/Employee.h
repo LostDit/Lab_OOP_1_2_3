@@ -1,8 +1,10 @@
+// Employee.h
 #ifndef EMPLOYEE_H
 #define EMPLOYEE_H
 
 #include <iostream>
 #include <string>
+#include <vector>
 
 struct Fullname {
     std::string surname;
@@ -29,7 +31,7 @@ std::ostream& operator<<(std::ostream& os, const Fullname& fn);
 std::istream& operator>>(std::istream& is, Employee& emp);
 std::ostream& operator<<(std::ostream& os, const Employee& emp);
 
-// Функции для работы с массивом сотрудников
+// Функции для работы с массивом
 void print(const Employee* employee, size_t size);
 void init(Employee* employee, size_t size);
 Employee* init(size_t size);
@@ -47,12 +49,22 @@ int find_element(const Employee* employee, size_t size, bool (*condition)(const 
 Employees find_all_elements(const Employee* employee, size_t size, bool (*condition)(const Employee&));
 size_t needful_element(const Employee* employee, size_t size, bool (*comparator)(const Employee&, const Employee&));
 
-
-//Доп функционал для генерации рандома
-
-// Генерация случайного сотрудника
+// Генерация случайных данных
 Employee generateRandomEmployee();
-// Заполнение массива случайными сотрудниками
 void fillRandom(Employee* employee, size_t size);
+
+//Перегрузки для вектора
+void print(const std::vector<Employee>& vec);
+void init(std::vector<Employee>& vec);
+void writeToTextFile(const std::vector<Employee>& vec, const std::string& filename);
+void readFromTextFile(std::vector<Employee>& vec, const std::string& filename);
+void writeToBinaryFile(const std::vector<Employee>& vec, const std::string& filename);
+void readFromBinaryFile(std::vector<Employee>& vec, const std::string& filename);
+
+int find_element(const std::vector<Employee>& vec, bool (*condition)(const Employee&));
+Employees find_all_elements(const std::vector<Employee>& vec, bool (*condition)(const Employee&));
+size_t needful_element(const std::vector<Employee>& vec, bool (*comparator)(const Employee&, const Employee&));
+
+void fillRandom(std::vector<Employee>& vec, size_t size);
 
 #endif

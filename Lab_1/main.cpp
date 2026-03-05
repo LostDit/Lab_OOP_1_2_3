@@ -62,67 +62,50 @@ int main() {
         clearInput();
 
         switch (choice) {
-        case 1: {
-            size_t n;
-            std::cout << "Введите количество сотрудников: ";
-            std::cin >> n;
-            clearInput();
-            employees.clear();
-            for (size_t i = 0; i < n; ++i) {
-                Employee emp;
-                std::cout << "\nСотрудник #" << i + 1 << ":\n";
-                std::cin >> emp;
-                employees.push_back(emp);
-            }
+        case 1:
+            init(employees);
             std::cout << "Массив создан.\n";
             break;
-        }
+
         case 2:
             if (employees.empty())
                 std::cout << "Массив пуст.\n";
             else
-                print(employees.data(), employees.size());
+                print(employees);
             break;
+
         case 3:
             if (employees.empty())
                 std::cout << "Нет данных для записи.\n";
             else
-                writeToTextFile(employees.data(), employees.size(), "output.txt");
+                writeToTextFile(employees, "output.txt");
             break;
+
         case 4:
             if (employees.empty())
                 std::cout << "Нет данных для записи.\n";
             else
-                writeToBinaryFile(employees.data(), employees.size(), "output.bin");
+                writeToBinaryFile(employees, "output.bin");
             break;
-        case 5: {
-            Employee* arr = nullptr;
-            size_t sz = 0;
-            readFromTextFile(arr, sz, "input.txt");
-            if (arr) {
-                employees.assign(arr, arr + sz);
-                delete[] arr;
+
+        case 5:
+            readFromTextFile(employees, "input.txt");
+            if (!employees.empty())
                 std::cout << "Данные загружены в программу.\n";
-            }
             break;
-        }
-        case 6: {
-            Employee* arr = nullptr;
-            size_t sz = 0;
-            readFromBinaryFile(arr, sz, "input.bin");
-            if (arr) {
-                employees.assign(arr, arr + sz);
-                delete[] arr;
+
+        case 6:
+            readFromBinaryFile(employees, "input.bin");
+            if (!employees.empty())
                 std::cout << "Данные загружены в программу.\n";
-            }
             break;
-        }
+
         case 7: {
             if (employees.empty()) {
                 std::cout << "Массив пуст.\n";
                 break;
             }
-            Employees women = find_all_elements(employees.data(), employees.size(), is_woman);
+            Employees women = find_all_elements(employees, is_woman);
             if (women.size == 0)
                 std::cout << "Женщины не найдены.\n";
             else {
@@ -132,12 +115,13 @@ int main() {
             delete[] women.employees;
             break;
         }
+
         case 8: {
             if (employees.empty()) {
                 std::cout << "Массив пуст.\n";
                 break;
             }
-            size_t idx = needful_element(employees.data(), employees.size(), younger_woman_comparator);
+            size_t idx = needful_element(employees, younger_woman_comparator);
             if (!is_woman(employees[idx])) {
                 std::cout << "Женщины отсутствуют.\n";
             } else {
@@ -145,18 +129,20 @@ int main() {
             }
             break;
         }
+
         case 9: {
             if (employees.empty()) {
                 std::cout << "Массив пуст.\n";
                 break;
             }
-            int res = find_element(employees.data(), employees.size(), is_female_pensioner);
+            int res = find_element(employees, is_female_pensioner);
             if (res != -1)
                 std::cout << "В фирме работают женщины-пенсионеры.\n";
             else
                 std::cout << "Женщин-пенсионеров нет.\n";
             break;
         }
+
         case 10: {
             Employee emp;
             std::cout << "Введите данные нового сотрудника:\n";
@@ -165,6 +151,7 @@ int main() {
             std::cout << "Сотрудник добавлен.\n";
             break;
         }
+
         case 11: {
             if (employees.empty()) {
                 std::cout << "Массив пуст.\n";
@@ -184,6 +171,7 @@ int main() {
             std::cout << "Данные обновлены.\n";
             break;
         }
+
         case 12: {
             if (employees.empty()) {
                 std::cout << "Массив пуст.\n";
@@ -201,18 +189,15 @@ int main() {
             std::cout << "Сотрудник удалён.\n";
             break;
         }
+
         case 13: {
             size_t n = safeInputInt("Введите количество сотрудников для генерации: ", 1, 100);
-            employees.clear();
-            Employee* temp = new Employee[n];
-            fillRandom(temp, n);
-            employees.assign(temp, temp + n);
-            delete[] temp;
+            fillRandom(employees, n);
             std::cout << "Сгенерировано " << n << " случайных сотрудников.\n";
             break;
         }
+
         case 14: {
-            // Чтение из output.txt и вывод на экран
             std::ifstream test("output.txt");
             if (!test) {
                 std::cout << "Файл output.txt не найден. Сначала запишите данные (пункт 3).\n";
@@ -220,18 +205,16 @@ int main() {
             }
             test.close();
 
-            Employee* arr = nullptr;
-            size_t sz = 0;
-            readFromTextFile(arr, sz, "output.txt");
-            if (arr) {
+            std::vector<Employee> temp;
+            readFromTextFile(temp, "output.txt");
+            if (!temp.empty()) {
                 std::cout << "Содержимое файла output.txt:\n";
-                print(arr, sz);
-                delete[] arr;
+                print(temp);
             }
             break;
         }
+
         case 15: {
-            // Чтение из output.bin и вывод на экран
             std::ifstream test("output.bin", std::ios::binary);
             if (!test) {
                 std::cout << "Файл output.bin не найден. Сначала запишите данные (пункт 4).\n";
@@ -239,19 +222,19 @@ int main() {
             }
             test.close();
 
-            Employee* arr = nullptr;
-            size_t sz = 0;
-            readFromBinaryFile(arr, sz, "output.bin");
-            if (arr) {
+            std::vector<Employee> temp;
+            readFromBinaryFile(temp, "output.bin");
+            if (!temp.empty()) {
                 std::cout << "Содержимое файла output.bin:\n";
-                print(arr, sz);
-                delete[] arr;
+                print(temp);
             }
             break;
         }
+
         case 0:
             std::cout << "Выход из программы.\n";
             break;
+
         default:
             std::cout << "Неверный выбор, повторите.\n";
         }
