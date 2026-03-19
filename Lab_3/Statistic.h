@@ -1,5 +1,5 @@
-#ifndef STATISTIC_HPP
-#define STATISTIC_HPP
+#ifndef STATISTIC_H
+#define STATISTIC_H
 
 #include <cstddef>
 #include <string>
@@ -21,7 +21,7 @@ public:
     Statistic(const Statistic& other);
     Statistic& operator=(const Statistic& other);
 
-    void print() const; // для демонстрации
+    void print() const; // добавлено объявление
 };
 
 #endif

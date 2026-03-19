@@ -1,5 +1,5 @@
-#ifndef FIFTEEN_HPP
-#define FIFTEEN_HPP
+#ifndef FIFTEEN_H
+#define FIFTEEN_H
 
 #include "Field.h"
 

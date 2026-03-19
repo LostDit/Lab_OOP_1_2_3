@@ -1,5 +1,5 @@
-#ifndef FIELD_HPP
-#define FIELD_HPP
+#ifndef FIELD_H
+#define FIELD_H
 
 #include <cstddef>
 #include <vector>

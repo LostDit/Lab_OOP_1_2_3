@@ -1,20 +1,24 @@
 #include "Field.h"
 #include <algorithm>
+#include <stdexcept>
 
 Field::Field(size_t s) : size(s), field(s, std::vector<int>(s)) {
+    if (s == 0)
+        throw std::invalid_argument("Field size cannot be zero");
     generateStartField(s);
 }
 
 void Field::generateStartField(const size_t& s) {
+    if (s == 0) return;
     int value = 1;
     for (size_t i = 0; i < s; ++i) {
         for (size_t j = 0; j < s; ++j) {
             field[i][j] = value++;
         }
     }
-    field[s-1][s-1] = 0;
-    zeroRow = static_cast<int>(s-1);
-    zeroCol = static_cast<int>(s-1);
+    field[s - 1][s - 1] = 0;
+    zeroRow = static_cast<int>(s - 1);
+    zeroCol = static_cast<int>(s - 1);
 }
 
 int Field::getCell(int r, int c) const {
