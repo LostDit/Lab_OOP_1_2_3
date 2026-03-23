@@ -1,6 +1,6 @@
 ![Ferz](https://github.com/user-attachments/assets/75254ee4-121a-4cac-9186-87958a2aac04)
 # *Лабараторные:*
-## [Лабараторная №1](https://github.com/LostDit/Lab_OOP_1_2_3/tree/main/Lab_1)
+## (finished)[Лабараторная №1](https://github.com/LostDit/Lab_OOP_1_2_3/tree/main/Lab_1)
 ### *Чеклист:* 
 - [x] 1. Создать файлы "Employee.h" и "Employee.cpp" для описания в них записи и перегрузки операторов вывода << и ввода >>.  
 
@@ -21,7 +21,7 @@
 | 2 | Найти самую молодую сотрудницу. | Найти сотрудницу женского пола с минимальным возрастом (или датой рождения — максимальная дата). |
 | 3 | Определить, работают ли в фирме женщины-пенсионеры. | Пенсионный возраст: женщины — 60 лет. Вывести список женщин с возрастом ≥ 60 и булево значение (есть/нет). |
 
-## [Лабараторная №3](https://github.com/LostDit/Lab_OOP_1_2_3/tree/main/Lab_3)
+## (finished)[Лабараторная №3](https://github.com/LostDit/Lab_OOP_1_2_3/tree/main/Lab_3)
 
 ### Задача 1. Класс Field
 - Добавить метод `void generateStartField(size_t const& size = 4);`
