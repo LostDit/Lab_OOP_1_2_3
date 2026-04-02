@@ -6,9 +6,6 @@
 
 Fifteen::Fifteen(size_t size) : game_field(size), count(0) {}
 
-int Fifteen::getCount() const {
-    return count;
-}
 
 void Fifteen::run() {
     std::srand(static_cast<unsigned>(std::time(nullptr)));
