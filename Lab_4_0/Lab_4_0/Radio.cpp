@@ -1,14 +1,12 @@
 #include "Radio.h"
 
-Radio::Radio() : station_(0) {}
+Radio::Radio() : station_(MIN_STATION) {}
 
 Radio& Radio::operator++() {
-    if (station_ == MAX_STATION) {
+    if (station_ == MAX_STATION)
         station_ = MIN_STATION;
-    }
-    else {
+    else
         ++station_;
-    }
     return *this;
 }
 
@@ -19,12 +17,10 @@ Radio Radio::operator++(int) {
 }
 
 Radio& Radio::operator--() {
-    if (station_ == MIN_STATION) {
+    if (station_ == MIN_STATION)
         station_ = MAX_STATION;
-    }
-    else {
+    else
         --station_;
-    }
     return *this;
 }
 

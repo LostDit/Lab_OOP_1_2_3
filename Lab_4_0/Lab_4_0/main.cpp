@@ -1,87 +1,157 @@
 #include <iostream>
 #include <windows.h>
+#include <conio.h>
 #include "Radio.h"
 #include "Field.h"
 #include "Statistic.h"
+#include "Fifteen.h"
 
+using namespace std;
+
+// ---------------------- Radio интерактив ----------------------
+void runRadio() {
+    system("cls");
+    Radio r;
+    cout << "=== Радио ===" << endl;
+    cout << "Текущая станция: " << r.getStation() << endl;
+    cout << "Управление: '+' (увеличить), '-' (уменьшить), 'q' - выход" << endl;
+    char key;
+    while (true) {
+        key = _getch();
+        if (key == '+') {
+            ++r;
+            cout << "Станция: " << r.getStation() << endl;
+        }
+        else if (key == '-') {
+            --r;
+            cout << "Станция: " << r.getStation() << endl;
+        }
+        else if (key == 'q') break;
+    }
+}
+
+// ---------------------- Field демонстрация ----------------------
+void runFieldDemo() {
+    system("cls");
+    cout << "=== Демонстрация Field ===" << endl;
+    vector<int> tiles1 = { 1,2,3,4,5,6,7,8,0 };
+    Field f1(3, 3, tiles1, 2, 2);
+    Field f2(3, 3, tiles1, 2, 2);
+    Field f3(3, 3, tiles1, 1, 1);
+    cout << "f1 == f2: " << (f1 == f2 ? "истина" : "ложь") << endl;
+    cout << "f1 != f2: " << (f1 != f2 ? "истина" : "ложь") << endl;
+    cout << "f1 == f3: " << (f1 == f3 ? "истина" : "ложь") << endl;
+    cout << "f1 != f3: " << (f1 != f3 ? "истина" : "ложь") << endl;
+    cout << "\nНажмите любую клавишу для возврата в меню...";
+    _getch();
+}
+
+// ---------------------- Statistic демонстрация ----------------------
+void runStatisticDemo() {
+    system("cls");
+    cout << "=== Статистика ===" << endl;
+    cout << "Введите числа через пробел (например: 10 20 30 40): ";
+    Statistic s;
+    cin >> s;  // используем operator>>
+    cin.ignore(32767, '\n'); // очистка буфера
+
+    cout << "Введённая статистика: " << s << endl;
+    cout << "Размер: " << s.size() << endl;
+
+    // Проверка operator[]
+    try {
+        cout << "Первый элемент: " << s[0] << endl;
+        cout << "Последний элемент: " << s[s.size() - 1] << endl;
+        // cout << s[100] << endl; // раскомментировать для проверки исключения
+    }
+    catch (const exception& e) {
+        cout << "Ошибка: " << e.what() << endl;
+    }
+
+    // getSlice
+    try {
+        size_t start, finish;
+        cout << "Введите начало и конец среза (включительно, от 0): ";
+        cin >> start >> finish;
+        Statistic slice = s.getSlice(start, finish);
+        cout << "Срез: " << slice << endl;
+
+        // operator+=
+        Statistic s2;
+        cout << "Введите ещё одну статистику для добавления: ";
+        cin >> s2;
+        s += s2;
+        cout << "Результат объединения: " << s << endl;
+    }
+    catch (const invalid_argument& e) {
+        cout << "Ошибка формата: " << e.what() << endl;
+    }
+    catch (const out_of_range& e) {
+        cout << "Выход за границы: " << e.what() << endl;
+    }
+    cout << "\nНажмите любую клавишу...";
+    _getch();
+}
+
+// ---------------------- Пятнашки ----------------------
+void runFifteen() {
+    system("cls");
+    cout << "=== Игра Пятнашки ===" << endl;
+    cout << "Введите размер поля (3 или 4): ";
+    int size;
+    cin >> size;
+    if (size < 2) size = 3;
+
+    Fifteen game(static_cast<size_t>(size));
+    game.run();
+    cout << "\nУправление: стрелки (↑ ↓ ← →). ESC - выход в меню." << endl;
+    system("pause");
+    system("cls");
+    game.draw();
+    cout << "Ходов: " << game.getCount() << endl;
+
+    while (!game.isGameOver()) {
+        int key = _getch();
+        if (key == 224) {
+            key = _getch();
+            game.onKeyPressed(key);
+            system("cls");
+            game.draw();
+            cout << "Ходов: " << game.getCount() << endl;
+        }
+        else if (key == 27) break;
+    }
+    if (game.isGameOver()) {
+        cout << "\nПоздравляем! Вы собрали головоломку за " << game.getCount() << " ходов!" << endl;
+        cout << "Нажмите любую клавишу...";
+        _getch();
+    }
+}
+
+// ---------------------- Главное меню ----------------------
 int main() {
     SetConsoleCP(65001);
     SetConsoleOutputCP(65001);
 
-    // Задача 1: Radio
-    std::cout << "=== Радио ===" << std::endl;
-    Radio r;
-    std::cout << "Начальная станция: " << r.getStation() << std::endl;
-    ++r;
-    std::cout << "После префиксного ++: " << r.getStation() << std::endl;
-    r++;
-    std::cout << "После постфиксного ++: " << r.getStation() << std::endl;
-    --r;
-    std::cout << "После префиксного --: " << r.getStation() << std::endl;
-    r--;
-    std::cout << "После постфиксного --: " << r.getStation() << std::endl;
+    while (true) {
+        system("cls");
+        cout << "========== ГЛАВНОЕ МЕНЮ ==========" << endl;
+        cout << "1. Радио (интерактивное переключение)" << endl;
+        cout << "2. Field (демонстрация == и !=)" << endl;
+        cout << "3. Statistic (ввод, вывод, срезы, объединение)" << endl;
+        cout << "4. Пятнашки (игра)" << endl;
+        cout << "0. Выход" << endl;
+        cout << "Выберите пункт: ";
+        char choice = _getch();
+        cout << endl;
 
-    // Задача 2: Field
-    std::cout << "\n=== Поле ===" << std::endl;
-    std::vector<int> tiles1 = { 1,2,3,4,5,6,7,8,0 };
-    Field f1(3, 3, tiles1, 2, 2);
-    Field f2(3, 3, tiles1, 2, 2);
-    Field f3(3, 3, tiles1, 1, 1);
-    std::cout << "f1 == f2: " << (f1 == f2 ? "истина" : "ложь") << std::endl;
-    std::cout << "f1 != f2: " << (f1 != f2 ? "истина" : "ложь") << std::endl;
-    std::cout << "f1 == f3: " << (f1 == f3 ? "истина" : "ложь") << std::endl;
-    std::cout << "f1 != f3: " << (f1 != f3 ? "истина" : "ложь") << std::endl;
-
-    // Задача 3: Statistic operator[]
-    std::cout << "\n=== Статистика: оператор [] ===" << std::endl;
-    Statistic stat("12 34 56 13 43");
-    try {
-        std::cout << "stat[0] = " << stat[0] << std::endl;
-        std::cout << "stat[4] = " << stat[4] << std::endl;
-        std::cout << "stat[100] = " << stat[100] << std::endl;
-    }
-    catch (const std::exception& e) {
-        std::cout << "Перехвачено исключение: " << e.what() << std::endl;
-    }
-
-    // Задача 4: getSlice и operator+=
-    std::cout << "\n=== Статистика: getSlice и operator+= ===" << std::endl;
-    Statistic stat2("10 20 30 40 50 60 70");
-    try {
-        Statistic slice = stat2.getSlice(1, 3);
-        std::cout << "Срез (1,3): ";
-        for (size_t i = 0; i < slice.size(); ++i) {
-            std::cout << slice[i] << " ";
+        switch (choice) {
+        case '1': runRadio(); break;
+        case '2': runFieldDemo(); break;
+        case '3': runStatisticDemo(); break;
+        case '4': runFifteen(); break;
+        case '0': return 0;
+        default: break;
         }
-        std::cout << std::endl;
-
-        Statistic stat3("100 200");
-        stat3 += slice;
-        std::cout << "После +=: ";
-        for (size_t i = 0; i < stat3.size(); ++i) {
-            std::cout << stat3[i] << " ";
-        }
-        std::cout << std::endl;
-
-        Statistic badSlice = stat2.getSlice(5, 2);
     }
-    catch (const std::invalid_argument& e) {
-        std::cout << "Перехвачено invalid_argument: " << e.what() << std::endl;
-    }
-    catch (const std::out_of_range& e) {
-        std::cout << "Перехвачено out_of_range: " << e.what() << std::endl;
-    }
-    catch (const std::exception& e) {
-        std::cout << "Перехвачено исключение: " << e.what() << std::endl;
-    }
-
-    try {
-        Statistic stat4("1 2 3");
-        Statistic slice2 = stat4.getSlice(0, 5);
-    }
-    catch (const std::exception& e) {
-        std::cout << "Перехвачено исключение (выход за границы): " << e.what() << std::endl;
-    }
-
-    return 0;
 }
