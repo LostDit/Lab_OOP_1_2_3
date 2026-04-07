@@ -3,6 +3,42 @@
   "WorkspaceRootPath": "C:\\Users\\LostDead\\Desktop\\Lab_OOP_1_2_3\\Lab_5\\FractionSolution\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{9921A400-D3E8-127A-92D2-EA911A96F937}|FractionUnitTest\\FractionUnitTest.vcxproj|C:\\Users\\LostDead\\Desktop\\Lab_OOP_1_2_3\\Lab_5\\FractionSolution\\FractionUnitTest\\SystemOfLinearEquationTests.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{9921A400-D3E8-127A-92D2-EA911A96F937}|FractionUnitTest\\FractionUnitTest.vcxproj|solutionrelative:FractionUnitTest\\SystemOfLinearEquationTests.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C50333E2-1AB5-4CA7-B7C1-029A5AEC3142}|FractionLib\\FractionLib.vcxproj|C:\\Users\\LostDead\\Desktop\\Lab_OOP_1_2_3\\Lab_5\\FractionSolution\\FractionLib\\SystemOfLinearEquation.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{C50333E2-1AB5-4CA7-B7C1-029A5AEC3142}|FractionLib\\FractionLib.vcxproj|solutionrelative:FractionLib\\SystemOfLinearEquation.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C50333E2-1AB5-4CA7-B7C1-029A5AEC3142}|FractionLib\\FractionLib.vcxproj|C:\\Users\\LostDead\\Desktop\\Lab_OOP_1_2_3\\Lab_5\\FractionSolution\\FractionLib\\SystemOfLinearEquation.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{C50333E2-1AB5-4CA7-B7C1-029A5AEC3142}|FractionLib\\FractionLib.vcxproj|solutionrelative:FractionLib\\SystemOfLinearEquation.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9921A400-D3E8-127A-92D2-EA911A96F937}|FractionUnitTest\\FractionUnitTest.vcxproj|C:\\Users\\LostDead\\Desktop\\Lab_OOP_1_2_3\\Lab_5\\FractionSolution\\FractionUnitTest\\LinearEquationTests.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{9921A400-D3E8-127A-92D2-EA911A96F937}|FractionUnitTest\\FractionUnitTest.vcxproj|solutionrelative:FractionUnitTest\\LinearEquationTests.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9921A400-D3E8-127A-92D2-EA911A96F937}|FractionUnitTest\\FractionUnitTest.vcxproj|C:\\Users\\LostDead\\Desktop\\Lab_OOP_1_2_3\\Lab_5\\FractionSolution\\FractionUnitTest\\StatisticTests.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{9921A400-D3E8-127A-92D2-EA911A96F937}|FractionUnitTest\\FractionUnitTest.vcxproj|solutionrelative:FractionUnitTest\\StatisticTests.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C50333E2-1AB5-4CA7-B7C1-029A5AEC3142}|FractionLib\\FractionLib.vcxproj|C:\\Users\\LostDead\\Desktop\\Lab_OOP_1_2_3\\Lab_5\\FractionSolution\\FractionLib\\Statistic.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{C50333E2-1AB5-4CA7-B7C1-029A5AEC3142}|FractionLib\\FractionLib.vcxproj|solutionrelative:FractionLib\\Statistic.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C50333E2-1AB5-4CA7-B7C1-029A5AEC3142}|FractionLib\\FractionLib.vcxproj|C:\\Users\\LostDead\\Desktop\\Lab_OOP_1_2_3\\Lab_5\\FractionSolution\\FractionLib\\Statistic.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{C50333E2-1AB5-4CA7-B7C1-029A5AEC3142}|FractionLib\\FractionLib.vcxproj|solutionrelative:FractionLib\\Statistic.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C50333E2-1AB5-4CA7-B7C1-029A5AEC3142}|FractionLib\\FractionLib.vcxproj|C:\\Users\\LostDead\\Desktop\\Lab_OOP_1_2_3\\Lab_5\\FractionSolution\\FractionLib\\LinearEquation.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{C50333E2-1AB5-4CA7-B7C1-029A5AEC3142}|FractionLib\\FractionLib.vcxproj|solutionrelative:FractionLib\\LinearEquation.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C50333E2-1AB5-4CA7-B7C1-029A5AEC3142}|FractionLib\\FractionLib.vcxproj|C:\\Users\\LostDead\\Desktop\\Lab_OOP_1_2_3\\Lab_5\\FractionSolution\\FractionLib\\LinearEquation.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{C50333E2-1AB5-4CA7-B7C1-029A5AEC3142}|FractionLib\\FractionLib.vcxproj|solutionrelative:FractionLib\\LinearEquation.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{9921A400-D3E8-127A-92D2-EA911A96F937}|FractionUnitTest\\FractionUnitTest.vcxproj|C:\\Users\\LostDead\\Desktop\\Lab_OOP_1_2_3\\Lab_5\\FractionSolution\\FractionUnitTest\\IndexerTests.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{9921A400-D3E8-127A-92D2-EA911A96F937}|FractionUnitTest\\FractionUnitTest.vcxproj|solutionrelative:FractionUnitTest\\IndexerTests.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
@@ -50,11 +86,128 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Document",
               "DocumentIndex": 4,
+              "Title": "StatisticTests.cpp",
+              "DocumentMoniker": "C:\\Users\\LostDead\\Desktop\\Lab_OOP_1_2_3\\Lab_5\\FractionSolution\\FractionUnitTest\\StatisticTests.cpp",
+              "RelativeDocumentMoniker": "FractionUnitTest\\StatisticTests.cpp",
+              "ToolTip": "C:\\Users\\LostDead\\Desktop\\Lab_OOP_1_2_3\\Lab_5\\FractionSolution\\FractionUnitTest\\StatisticTests.cpp",
+              "RelativeToolTip": "FractionUnitTest\\StatisticTests.cpp",
+              "ViewState": "AgIAACIAAAAAAAAAAADwv0gAAAAYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2026-04-07T22:26:11.562Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Statistic.cpp",
+              "DocumentMoniker": "C:\\Users\\LostDead\\Desktop\\Lab_OOP_1_2_3\\Lab_5\\FractionSolution\\FractionLib\\Statistic.cpp",
+              "RelativeDocumentMoniker": "FractionLib\\Statistic.cpp",
+              "ToolTip": "C:\\Users\\LostDead\\Desktop\\Lab_OOP_1_2_3\\Lab_5\\FractionSolution\\FractionLib\\Statistic.cpp",
+              "RelativeToolTip": "FractionLib\\Statistic.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAGYAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2026-04-07T22:25:37.77Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Statistic.h",
+              "DocumentMoniker": "C:\\Users\\LostDead\\Desktop\\Lab_OOP_1_2_3\\Lab_5\\FractionSolution\\FractionLib\\Statistic.h",
+              "RelativeDocumentMoniker": "FractionLib\\Statistic.h",
+              "ToolTip": "C:\\Users\\LostDead\\Desktop\\Lab_OOP_1_2_3\\Lab_5\\FractionSolution\\FractionLib\\Statistic.h",
+              "RelativeToolTip": "FractionLib\\Statistic.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACQAAAAUAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2026-04-07T22:25:34.065Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "SystemOfLinearEquationTests.cpp",
+              "DocumentMoniker": "C:\\Users\\LostDead\\Desktop\\Lab_OOP_1_2_3\\Lab_5\\FractionSolution\\FractionUnitTest\\SystemOfLinearEquationTests.cpp",
+              "RelativeDocumentMoniker": "FractionUnitTest\\SystemOfLinearEquationTests.cpp",
+              "ToolTip": "C:\\Users\\LostDead\\Desktop\\Lab_OOP_1_2_3\\Lab_5\\FractionSolution\\FractionUnitTest\\SystemOfLinearEquationTests.cpp",
+              "RelativeToolTip": "FractionUnitTest\\SystemOfLinearEquationTests.cpp",
+              "ViewState": "AgIAAEEAAAAAAAAAAADwv1cAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2026-04-07T22:24:41.822Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "SystemOfLinearEquation.cpp",
+              "DocumentMoniker": "C:\\Users\\LostDead\\Desktop\\Lab_OOP_1_2_3\\Lab_5\\FractionSolution\\FractionLib\\SystemOfLinearEquation.cpp",
+              "RelativeDocumentMoniker": "FractionLib\\SystemOfLinearEquation.cpp",
+              "ToolTip": "C:\\Users\\LostDead\\Desktop\\Lab_OOP_1_2_3\\Lab_5\\FractionSolution\\FractionLib\\SystemOfLinearEquation.cpp",
+              "RelativeToolTip": "FractionLib\\SystemOfLinearEquation.cpp",
+              "ViewState": "AgIAAEgAAAAAAAAAAADwv1kAAAAQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2026-04-07T22:23:58.452Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "SystemOfLinearEquation.h",
+              "DocumentMoniker": "C:\\Users\\LostDead\\Desktop\\Lab_OOP_1_2_3\\Lab_5\\FractionSolution\\FractionLib\\SystemOfLinearEquation.h",
+              "RelativeDocumentMoniker": "FractionLib\\SystemOfLinearEquation.h",
+              "ToolTip": "C:\\Users\\LostDead\\Desktop\\Lab_OOP_1_2_3\\Lab_5\\FractionSolution\\FractionLib\\SystemOfLinearEquation.h",
+              "RelativeToolTip": "FractionLib\\SystemOfLinearEquation.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABwAAAAoAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2026-04-07T22:23:41.97Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "LinearEquationTests.cpp",
+              "DocumentMoniker": "C:\\Users\\LostDead\\Desktop\\Lab_OOP_1_2_3\\Lab_5\\FractionSolution\\FractionUnitTest\\LinearEquationTests.cpp",
+              "RelativeDocumentMoniker": "FractionUnitTest\\LinearEquationTests.cpp",
+              "ToolTip": "C:\\Users\\LostDead\\Desktop\\Lab_OOP_1_2_3\\Lab_5\\FractionSolution\\FractionUnitTest\\LinearEquationTests.cpp",
+              "RelativeToolTip": "FractionUnitTest\\LinearEquationTests.cpp",
+              "ViewState": "AgIAAIMAAAAAAAAAAADgv6EAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2026-04-07T22:22:26.868Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "LinearEquation.cpp",
+              "DocumentMoniker": "C:\\Users\\LostDead\\Desktop\\Lab_OOP_1_2_3\\Lab_5\\FractionSolution\\FractionLib\\LinearEquation.cpp",
+              "RelativeDocumentMoniker": "FractionLib\\LinearEquation.cpp",
+              "ToolTip": "C:\\Users\\LostDead\\Desktop\\Lab_OOP_1_2_3\\Lab_5\\FractionSolution\\FractionLib\\LinearEquation.cpp",
+              "RelativeToolTip": "FractionLib\\LinearEquation.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAABCAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2026-04-07T22:21:55.067Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "LinearEquation.h",
+              "DocumentMoniker": "C:\\Users\\LostDead\\Desktop\\Lab_OOP_1_2_3\\Lab_5\\FractionSolution\\FractionLib\\LinearEquation.h",
+              "RelativeDocumentMoniker": "FractionLib\\LinearEquation.h",
+              "ToolTip": "C:\\Users\\LostDead\\Desktop\\Lab_OOP_1_2_3\\Lab_5\\FractionSolution\\FractionLib\\LinearEquation.h",
+              "RelativeToolTip": "FractionLib\\LinearEquation.h",
+              "ViewState": "AgIAAAsAAAAAAAAAAADwvzcAAAACAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2026-04-07T22:21:47.888Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
               "Title": "pch.cpp",
               "DocumentMoniker": "C:\\Users\\LostDead\\Desktop\\Lab_OOP_1_2_3\\Lab_5\\FractionSolution\\FractionUnitTest\\pch.cpp",
               "RelativeDocumentMoniker": "FractionUnitTest\\pch.cpp",
@@ -62,12 +215,11 @@
               "RelativeToolTip": "FractionUnitTest\\pch.cpp",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2026-04-07T21:54:28.274Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-04-07T21:54:28.274Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 14,
               "Title": "pch.h",
               "DocumentMoniker": "C:\\Users\\LostDead\\Desktop\\Lab_OOP_1_2_3\\Lab_5\\FractionSolution\\FractionUnitTest\\pch.h",
               "RelativeDocumentMoniker": "FractionUnitTest\\pch.h",
@@ -75,12 +227,11 @@
               "RelativeToolTip": "FractionUnitTest\\pch.h",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAYAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2026-04-07T21:54:18.53Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-04-07T21:54:18.53Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 12,
               "Title": "Indexer.cpp",
               "DocumentMoniker": "C:\\Users\\LostDead\\Desktop\\Lab_OOP_1_2_3\\Lab_5\\FractionSolution\\FractionLib\\Indexer.cpp",
               "RelativeDocumentMoniker": "FractionLib\\Indexer.cpp",
@@ -88,12 +239,11 @@
               "RelativeToolTip": "FractionLib\\Indexer.cpp",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABwAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2026-04-07T21:53:53.767Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-04-07T21:53:53.767Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 15,
               "Title": "Indexer.h",
               "DocumentMoniker": "C:\\Users\\LostDead\\Desktop\\Lab_OOP_1_2_3\\Lab_5\\FractionSolution\\FractionLib\\Indexer.h",
               "RelativeDocumentMoniker": "FractionLib\\Indexer.h",
@@ -101,12 +251,11 @@
               "RelativeToolTip": "FractionLib\\Indexer.h",
               "ViewState": "AgIAAAEAAAAAAAAAAAAcwBIAAAACAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2026-04-07T21:52:24.907Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-04-07T21:52:24.907Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 9,
               "Title": "IndexerTests.cpp",
               "DocumentMoniker": "C:\\Users\\LostDead\\Desktop\\Lab_OOP_1_2_3\\Lab_5\\FractionSolution\\FractionUnitTest\\IndexerTests.cpp",
               "RelativeDocumentMoniker": "FractionUnitTest\\IndexerTests.cpp",
@@ -119,7 +268,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 10,
               "Title": "FractionTests.cpp",
               "DocumentMoniker": "C:\\Users\\LostDead\\Desktop\\Lab_OOP_1_2_3\\Lab_5\\FractionSolution\\FractionUnitTest\\FractionTests.cpp",
               "RelativeDocumentMoniker": "FractionUnitTest\\FractionTests.cpp",
@@ -127,12 +276,11 @@
               "RelativeToolTip": "FractionUnitTest\\FractionTests.cpp",
               "ViewState": "AgIAAM0AAAAAAAAAAADgv+MAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2026-04-07T21:49:21.678Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-04-07T21:49:21.678Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 11,
               "Title": "Fraction.cpp",
               "DocumentMoniker": "C:\\Users\\LostDead\\Desktop\\Lab_OOP_1_2_3\\Lab_5\\FractionSolution\\FractionLib\\Fraction.cpp",
               "RelativeDocumentMoniker": "FractionLib\\Fraction.cpp",
@@ -140,12 +288,11 @@
               "RelativeToolTip": "FractionLib\\Fraction.cpp",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAANIAAAAPAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2026-04-07T21:47:51.729Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-04-07T21:47:51.729Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 18,
               "Title": "pch.h",
               "DocumentMoniker": "C:\\Users\\LostDead\\Desktop\\Lab_OOP_1_2_3\\Lab_5\\FractionSolution\\FractionLib\\pch.h",
               "RelativeDocumentMoniker": "FractionLib\\pch.h",
@@ -153,12 +300,11 @@
               "RelativeToolTip": "FractionLib\\pch.h",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAQAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2026-04-07T21:47:28.619Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-04-07T21:47:28.619Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 17,
               "Title": "pch.cpp",
               "DocumentMoniker": "C:\\Users\\LostDead\\Desktop\\Lab_OOP_1_2_3\\Lab_5\\FractionSolution\\FractionLib\\pch.cpp",
               "RelativeDocumentMoniker": "FractionLib\\pch.cpp",
@@ -166,12 +312,11 @@
               "RelativeToolTip": "FractionLib\\pch.cpp",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2026-04-07T21:47:22.848Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-04-07T21:47:22.848Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 16,
               "Title": "Fraction.h",
               "DocumentMoniker": "C:\\Users\\LostDead\\Desktop\\Lab_OOP_1_2_3\\Lab_5\\FractionSolution\\FractionLib\\Fraction.h",
               "RelativeDocumentMoniker": "FractionLib\\Fraction.h",
@@ -179,8 +324,7 @@
               "RelativeToolTip": "FractionLib\\Fraction.h",
               "ViewState": "AgIAAC8AAAAAAAAAAAAcwEAAAAA9AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2026-04-07T21:47:10.849Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-04-07T21:47:10.849Z"
             }
           ]
         }

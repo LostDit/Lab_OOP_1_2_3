@@ -3,6 +3,6 @@
     <Platform Name="x64" />
     <Platform Name="x86" />
   </Configurations>
-  <Project Path="FractionLib/FractionLib.vcxproj" />
+  <Project Path="FractionLib/FractionLib.vcxproj" Id="c50333e2-1ab5-4ca7-b7c1-029a5aec3142" />
   <Project Path="FractionUnitTest/FractionUnitTest.vcxproj" />
 </Solution>
